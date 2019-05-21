@@ -25,6 +25,7 @@ class Carousel {
         this.images[this.curIndex].classList.remove('hide')
         fadeIn(this.images[this.curIndex])
         console.log(this.curIndex)
+        this.updateCarouselText(this.curIndex)
     }
     clickRight(object) {
         Array.from(object).forEach(object => {
@@ -40,8 +41,20 @@ class Carousel {
         this.images[this.curIndex].classList.remove('hide')
         fadeIn(this.images[this.curIndex])
         console.log(this.curIndex)
+        this.updateCarouselText(this.curIndex)
+    }
+    updateCarouselText(index) {
+        console.log(index)
+        document.querySelectorAll('.carousel-text').forEach(object => {
+            object.classList.remove('show-carousel-text')
+            if (object.dataset.id === String(index + 1)){
+                object.classList.add('show-carousel-text')
+                fadeIn(object)
+            }
+        })
     }
 }
+
 let carousel = document.querySelector('.carousel')
 new Carousel(carousel)
 
@@ -55,4 +68,3 @@ function fadeIn(el) {
     };
     tick();
 }
-

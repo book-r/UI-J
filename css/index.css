@@ -1,17 +1,12 @@
-.width-100 {
-  width: 100%;
-}
 .border-bottom-grey {
   border-bottom: 1px solid lightgrey;
 }
 .carousel {
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
+  max-height: 350px;
   margin-top: 16px;
 }
 .carousel img {
-  height: 350px;
+  max-height: 350px;
   width: auto;
 }
 .carousel .left-button,
@@ -20,7 +15,6 @@
   background-color: rgba(51, 51, 51, 0.8);
   font-size: 40px;
   width: 50px;
-  height: 350px;
   height: 100%;
   z-index: 11;
   text-align: center;
@@ -28,7 +22,6 @@
   cursor: pointer;
 }
 .carousel .hide {
-  width: 100%;
   display: none;
 }
 .carousel .show {
@@ -87,7 +80,7 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 .container {
-  background-image: url(/content/bookcase-books-bookshelf-1166657.jpg);
+  background-image: url(/content/ancient-antique-art-235985.jpg);
   background-size: cover;
 }
 .header-border {
@@ -140,6 +133,35 @@ body {
   .main-content .carousel {
     display: none;
   }
+}
+.main-content .carousel-text {
+  display: none;
+}
+@media (max-width: 500px) {
+  .main-content .carousel-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    background: white;
+    max-width: 940px;
+    margin-top: 2%;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+  }
+}
+.main-content .show-carousel-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  background: white;
+  max-width: 940px;
+  margin-top: 2%;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
 }
 .main-content .carousel {
   justify-content: center;
