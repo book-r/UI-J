@@ -1,33 +1,24 @@
 .carousel {
   .width-100();
-  .flex(center, center);
-  height: 500px;
-  position: relative;
+  height: 350px;
   overflow: hidden;
   margin-top: 16px;
-  @media(min-width: 1200px){
-    width: 1200px;
-  }
+  
   img {
-    height: 500px;
+    height: 350px;
     width: auto;
   }
   .left-button, .right-button {
-    .flex(center);
-    color: @lambda-times-color-white;
+    color: lightblue;
     background-color: rgba(51,51,51,.8);
     font-size: 40px;
-    // width: 50px;
+    width: 50px;
+    height: 350px;
     height: 100%;
     z-index: 11;
     text-align: center;
     justify-content: center;
     cursor: pointer;
-    &:hover {
-      color: @lambda-times-color-primary;
-      background-color: @lambda-times-color-white;
-      border: 2px solid @lambda-times-color-primary;
-    }
   }
 
   .hide {
@@ -36,6 +27,15 @@
   }
   .show {
     display : block;
+  }
+  @media (max-width:800px) {
+    img{
+    width: 80%;
+    height: auto;
+    }
+  }
+  @media (max-width:500px){
+    display: none;
   }
 }
 
