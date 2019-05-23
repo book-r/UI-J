@@ -21,12 +21,6 @@ body {
 }
 
 
-.container {
-//   // background-image: url(/content/ancient-antique-art-235985.jpg);
-//   // background-size: cover;
-  // background-color: #b4c6e8;
-}
-
 .header-border {
   height: 80px;
   width: 100%;
@@ -250,14 +244,16 @@ body {
 
   .book-grid {
     padding-bottom: 2%;
+    flex-wrap: wrap;
     .top-box {
       width: 30%;
       height: auto;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
+      text-align: center;
       border: 1px solid rgb(51, 51, 51);
-      // border-radius: 25px;
+      border-radius: 25px;
       margin-top: 25px;
       background-color: white;
       overflow: hidden;
@@ -266,6 +262,10 @@ body {
         width: 60%;
         height: auto;
         border-radius: 2px;
+      }
+      .stars {
+        width: 64px;
+        height: 64px;
       }
 
       p {

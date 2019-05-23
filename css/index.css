@@ -369,6 +369,7 @@ body {
 }
 .main-content .book-grid {
   padding-bottom: 2%;
+  flex-wrap: wrap;
 }
 .main-content .book-grid .top-box {
   width: 30%;
@@ -376,7 +377,9 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  text-align: center;
   border: 1px solid #333333;
+  border-radius: 25px;
   margin-top: 25px;
   background-color: white;
   overflow: hidden;
@@ -385,6 +388,10 @@ body {
   width: 60%;
   height: auto;
   border-radius: 2px;
+}
+.main-content .book-grid .top-box .stars {
+  width: 64px;
+  height: 64px;
 }
 .main-content .book-grid .top-box p {
   padding: 10px;
