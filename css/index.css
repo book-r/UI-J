@@ -1,6 +1,65 @@
 .border-bottom-grey {
   border-bottom: 1px solid lightgrey;
 }
+.push_button {
+  position: relative;
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  line-height: 43px;
+  font-family: 'Oswald', Helvetica;
+  display: block;
+  margin: 30px;
+}
+.push_button:before {
+  background: #f0f0f0;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D0D0D0), to(#f0f0f0));
+  border-radius: 5px;
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  top: -6px;
+  bottom: -10px;
+  z-index: -1;
+}
+.push_button:active {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  top: 5px;
+}
+.push_button:active:before {
+  top: -11px;
+  bottom: -5px;
+}
+.red {
+  text-shadow: -1px -1px 0 #A84155;
+  background: #D25068;
+  border: 1px solid #D25068;
+  background-image: linear-gradient(to bottom, #F66C7B, #D25068);
+  border-radius: 5px;
+  width: 50%;
+  height: 20%;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, 0.5);
+}
+.red:hover {
+  background: #F66C7B;
+  background-image: linear-gradient(top, #D25068, #F66C7B);
+}
+.blue {
+  text-shadow: -1px -1px 0 #2C7982;
+  background: #3EACBA;
+  border: 1px solid #379AA4;
+  background-image: linear-gradient(top, #48C6D4, #3EACBA);
+  border-radius: 5px;
+  width: 50%;
+  height: 20%;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, 0.5);
+}
+.blue:hover {
+  background: #48C6D4;
+  background-image: linear-gradient(top, #3EACBA, #48C6D4);
+}
 .carousel {
   max-height: 350px;
   margin-top: 16px;
@@ -39,28 +98,67 @@
   }
 }
 @font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
+  font-family: 'Arvo';
   font-style: normal;
   font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+  font-display: swap;
+  src: local('Arvo Bold'), local('Arvo-Bold'), url(https://fonts.gstatic.com/s/arvo/v11/tDbM2oWUg0MKoZw1-LPK9g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
 * {
   box-sizing: border-box;
@@ -79,35 +177,51 @@ body {
   color: #333;
   font-family: 'PT Sans', sans-serif;
 }
-.container {
-  background-image: url(/content/ancient-antique-art-235985.jpg);
-  background-size: cover;
-}
 .header-border {
-  height: 40px;
+  height: 80px;
   width: 100%;
-  border-bottom: 2px solid black;
-  background-color: darkcyan;
+  background: #078C54;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+.header-border img {
+  height: 50px;
+  width: auto;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+@media (max-width: 500px) {
+  .header-border {
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    height: 120px;
+    margin-top: 0px;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+  }
+  .header-border a {
+    width: 100%;
+    border-bottom: 2px solid gray;
+  }
 }
 .header {
-  margin-top: -20px;
-  height: 40px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 25px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-content: center;
-  z-index: 10;
-  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
 }
 .header a {
   padding: 6px;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-family: fantasy;
-  color: darkslategray;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 18px;
+  color: #f5f5f5;
 }
 .header a:hover {
   font-size: 1.4rem;
@@ -116,10 +230,38 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  width: 80%;
-  margin-top: -20px;
-  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 1200px;
   border-radius: 25px;
+}
+.main-content .top-header {
+  font-size: 3rem;
+  font-family: Arvo;
+}
+.main-content .top-image {
+  background-image: url(/content/architecture-book-shelves-bookcase-1319854.jpg);
+  background-size: 100% 100%;
+  width: auto;
+  height: 400px;
+}
+.main-content .top-image section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 100%;
+  width: 100%;
+}
+.main-content .top-image section div {
+  height: 40%;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.main-content .top-image section .button-area {
+  background: none;
+  border: none;
 }
 @media (max-width: 800px) {
   .main-content {
@@ -144,7 +286,7 @@ body {
     align-items: center;
     align-self: center;
     background: white;
-    max-width: 940px;
+    max-width: 480px;
     margin-top: 2%;
     border: 2px solid black;
     border-radius: 8px;
@@ -163,6 +305,11 @@ body {
   border-radius: 8px;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .main-content .show-carousel-text {
+    max-width: 480px;
+  }
+}
 .main-content .carousel {
   justify-content: center;
 }
@@ -180,6 +327,7 @@ body {
   align-self: center;
   width: 90%;
   padding: 40px;
+  border-bottom: 2px solid gray;
 }
 @media (max-width: 800px) {
   .main-content .top-paragraphs img {
@@ -201,6 +349,9 @@ body {
   height: 200px;
   width: auto;
   padding: 0 20px;
+}
+.main-content .book-grid {
+  padding-bottom: 2%;
 }
 .main-content .book-grid .top-box {
   width: 30%;
@@ -229,4 +380,12 @@ body {
     width: 90%;
     align-self: center;
   }
+}
+.main-content footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5%;
+  background-color: #078C54;
 }
