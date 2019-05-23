@@ -1,0 +1,43 @@
+.about-grid {
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+
+    .top-box {
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        border: 1px solid rgb(51, 51, 51);
+        border-radius: 5px;
+        margin-top: 25px;
+        background-color: white;
+        overflow: hidden;
+
+        img {
+            width: 60%;
+            height: auto;
+            border-radius: 2px;
+        }
+
+        .stars {
+            width: 64px;
+            height: 64px;
+            padding: 2%;
+        }
+
+        p {
+            padding: 10px;
+        }
+    }
+
+    @media (max-width:800px) {
+        flex-direction: column;
+
+        .top-box {
+            width: 90%;
+            align-self: center;
+        }
+    }
+}
