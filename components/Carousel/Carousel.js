@@ -47,7 +47,7 @@ class Carousel {
         console.log(index)
         document.querySelectorAll('.carousel-text').forEach(object => {
             object.classList.remove('show-carousel-text')
-            if (object.dataset.id === String(index + 1)){
+            if (object.dataset.id === String(index + 1)) {
                 object.classList.add('show-carousel-text')
                 fadeIn(object)
             }
