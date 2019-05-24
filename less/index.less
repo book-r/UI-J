@@ -1,8 +1,8 @@
 @import './variables';
 @import './mixins';
-@import './buttons.less';
 @import '../components/Carousel/Carousel.less';
 @import url('https://fonts.googleapis.com/css?family=Arvo:700|Raleway:400,500|Roboto:300,300i,400,400i,700,700i&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -15,25 +15,31 @@ body {
 
 body {
   .flex(none, center, column);
-  background-color: @lambda-times-color-background;
-  color: @lambda-times-color-primary;
+  background-color: @Alabaster;
+  color: @Ebony;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
-
-.container {
-//   // background-image: url(/content/ancient-antique-art-235985.jpg);
-//   // background-size: cover;
-  // background-color: #b4c6e8;
+.background-green{
+  width: 100%;
+  height: 80px;
+  background: @Salem;
+  display: flex;
+  justify-content: space-around; 
+  @media (max-width: 500px) {
+    height: 120px;
+  }
 }
+
 
 .header-border {
   height: 80px;
   width: 100%;
   // border-bottom: 2px solid black;
   // background-color:#028090;
-  background: #078C54;
-  color: #f5f5f5;
+  background: @Salem;
+  color: @Wild-Sand;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -57,7 +63,7 @@ body {
     a {
       width: 100%;
       // background-color: white;
-      border-bottom: 2px solid gray;
+      border-bottom: 2px solid @Shuttle-Gray;
     }
   }
 
@@ -80,7 +86,7 @@ body {
     text-decoration: none;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 18px;
-    color: #f5f5f5;
+    color: @Wild-Sand;
 
     &:hover {
       font-size: 1.4rem;
@@ -114,7 +120,7 @@ body {
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
-      background-color: rgba(255, 255, 255, .2);
+      background-color: @Wild-Sand;
       height: 100%;
       width: 100%;
       div {
@@ -123,9 +129,6 @@ body {
         text-align: center;
         display: flex;
         flex-direction: column;
-        // background-color: white;
-        // border: 1px solid black;
-        // border-radius: 4px;
       }
 
       .button-area {
@@ -159,10 +162,10 @@ body {
       flex-direction: column;
       align-items: center;
       align-self: center;
-      background: white;
+      background: @Wild-Sand;
       max-width: 480px;
       margin-top: 2%;
-      border: 2px solid black;
+      border: 2px solid @Ebony;
       border-radius: 8px;
       text-align: center;
     }
@@ -173,10 +176,10 @@ body {
     flex-direction: column;
     align-items: center;
     align-self: center;
-    background: white;
+    background: @Wild-Sand;
     max-width: 940px;
     margin-top: 2%;
-    border: 3px double #001933;
+    border: 3px double @Midnight;
     border-radius: 8px;
     text-align: center;
     p {
@@ -215,7 +218,7 @@ body {
       }
     }
     h1 {
-      border-top: 3px double #001933;
+      border-top: 3px double @Midnight;
       padding-top: 2%;
       }
     // background: white;
@@ -232,7 +235,7 @@ body {
       align-content: flex-end;
       justify-content: flex-end;
       width: 100%;
-      border-bottom: 3px double #001933;
+      border-bottom: 3px double @Midnight;
       padding-bottom: 2%;
     }
 
@@ -250,22 +253,29 @@ body {
 
   .book-grid {
     padding-bottom: 2%;
+    flex-wrap: wrap;
     .top-box {
       width: 30%;
       height: auto;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      border: 1px solid rgb(51, 51, 51);
-      // border-radius: 25px;
+      text-align: center;
+      border: 1px solid @Shuttle-Gray;
+      border-radius: 5px;
       margin-top: 25px;
-      background-color: white;
+      background-color: @Wild-Sand;
       overflow: hidden;
 
       img {
         width: 60%;
         height: auto;
         border-radius: 2px;
+      }
+      .stars {
+        width: 100px;
+        height: auto;
+        padding: 2%;
       }
 
       p {
@@ -288,9 +298,16 @@ body {
     align-items: center;
     text-align: center;
     height: 5%;
-    background-color: #078C54;
+    background-color: @Salem;
+    color: @Wild-Sand;
   }
 }
+
+// @media (max-width: 800px){
+// 	.book-area{
+// 		display: none;
+// 	}
+// }
 
 
 // Photo by Mike Bird from Pexels
