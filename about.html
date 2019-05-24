@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <script src="/scripts/jquery-3.4.1.min.js"></script>
   <script src="/scripts/modernizr.2.5.3.min.js"></script>
+  <script src="/scripts/about-book.js"></script>
   <link href="css/index.css" rel="stylesheet">
   <link href="css/about.css" rel="stylesheet">
 
@@ -29,7 +30,7 @@
   </div>
 
   <section class="main-content">
-    <div class='top-image'>
+    <div class='top-image-about'>
 
     </div>
     <div class='top-paragraphs'>
@@ -37,7 +38,6 @@
       <h1>Meet our team!</h1>
       <div class='right'>
         <img src="./content/svg/undraw_team_spirit_hrr4.svg">
-
         <p>Our team comprises of students going through Lambda School. Listed
           below are people who have contributed to this project.
         </p>
@@ -68,7 +68,7 @@
         <h2>Kelli Ray Hanson</h2>
         <img src="./content/About Us/Kelli Rae Hanson.png">
         <h3>Team Lead</h3>
-        <a href="#"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
+        <a href="https://github.com/kelliraehanson"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
             width="64" height="64" /></a>
       </div>
 
@@ -76,7 +76,7 @@
           <h2>Hector S Villasano</h2>
           <img src="./content/About Us/Hector S. Villasano.jpg">
           <h3>iOS Developer</h3>
-          <a href="#"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
+          <a href="https://github.com/hectorsvill"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
               width="64" height="64" /></a>
         </div>
 
@@ -84,7 +84,7 @@
         <h2>Ming Liu</h2>
         <img src="./content/About Us/Ming Liu.png">
         <h3>Front End Developer</h3>
-        <a href="#"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
+        <a href="https://github.com/skysthelimit68"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
             width="64" height="64" /></a>
       </div>
 
@@ -92,7 +92,7 @@
         <h2>Arron Marshall</h2>
         <img src="./content/About Us/Arron Marshall.png">
         <h3>Front End Developer</h3>
-        <a href="#"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
+        <a href="https://github.com/arronm"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
             width="64" height="64" /></a>
       </div>
 
@@ -100,7 +100,7 @@
         <h2>Henry Blevins</h2>
         <img src="./content/About Us/Henry Blevins.jpg">
         <h3>Back End Developer</h3>
-        <a href="#"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
+        <a href="https://github.com/Blevs"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
             width="64" height="64" /></a>
       </div>
 
@@ -108,7 +108,7 @@
         <h2>Samantha Egge</h2>
         <img src="./content/About Us/Samantha Egge.png">
         <h3>UI Developer</h3>
-        <a href="#"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
+        <a href="https://github.com/SamanthaEgge"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
             width="64" height="64" /></a>
       </div>
 
@@ -116,7 +116,7 @@
         <h2>Jacob McGrath</h2>
         <img src="./content/About Us/Jacob McGrath.png">
         <h3>UI Developer</h3>
-        <a href="#"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
+        <a href="https://github.com/JakeGrath"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
             width="64" height="64" /></a>
       </div>
 
@@ -124,51 +124,11 @@
         <h2>Isaias Garcia-Ariza</h2>
         <img src="./content/About Us/Isaias Garcia-Ariza.jpg">
         <h3>UI Developer</h3>
-        <a href="#"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
+        <a href="https://github.com/isaiasGA"><img class="stars" src="https://img.icons8.com/ios/50/000000/github-filled.png" title="GitHub"
             width="64" height="64" /></a>
       </div>
 
     </div>
-    <script type="text/javascript">
-      function loadApp() {
-
-        // Create the flipbook
-
-        $('.flipbook').turn({
-          // Width
-
-          width: 700,
-
-          // Height
-
-          height: 455,
-
-          // Elevation
-
-          elevation: 50,
-
-          // Enable gradients
-
-          gradients: true,
-
-          // Auto center this flipbook
-
-          autoCenter: true
-
-        });
-      }
-
-      // Load the HTML4 version if there's not CSS transform
-
-      yepnope({
-        test: Modernizr.csstransforms,
-        yep: ['/scripts/lib/turn.js'],
-        nope: ['/scripts/turn.html4.min.js'],
-        both: ['css/book.css'],
-        complete: loadApp
-      });
-    </script>
-
     </div>
     <footer>Copyright Bookr 2019</footer>
   </section>

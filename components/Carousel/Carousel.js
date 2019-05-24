@@ -61,7 +61,7 @@ new Carousel(carousel)
 function fadeIn(el) {
     el.style.opacity = 0;
     var tick = function () {
-        el.style.opacity = +el.style.opacity + 0.01;
+        el.style.opacity = +el.style.opacity + 0.02;
         if (+el.style.opacity < 1) {
             (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 8)
         }
