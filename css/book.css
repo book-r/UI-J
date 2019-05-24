@@ -3,7 +3,7 @@
 .flipbook-viewport{
 	overflow:hidden;
 	width:1200px;
-	height:700px;
+	height:500px;
 }
 
 .flipbook-viewport .container-flipbook{
@@ -17,15 +17,15 @@
 }
 
 .flipbook-viewport .flipbook{
-	width:80%;
-	height:auto;
+	width:700px;
+	height:455;
 	left:-40px;
 	top:-300px;
 }
 
 .flipbook-viewport .page{
-	width:461px;
-	height:600px;
+	width:350px;
+	height:455px;
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
@@ -61,3 +61,4 @@
 	-ms-box-shadow:0 0 20px #ccc;
 	box-shadow:0 0 20px #ccc;
 }
+

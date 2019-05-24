@@ -1,43 +1,62 @@
 .about-grid {
-    padding-bottom: 2%;
-    flex-wrap: wrap;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+}
 
-    .top-box {
-        width: 30%;
-        height: auto;
+.about-grid .avatar-card {
+    width: 461px;
+    height: 600px;
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    border: 3px double #333333;
+    border-radius: 5px;
+    margin-top: 25px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.about-grid .avatar-card img {
+    width: 60%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.about-grid .avatar-card .stars {
+    width: 64px;
+    height: 64px;
+    padding: 2%;
+}
+
+.about-grid .avatar-card p {
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .about-grid {
         display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        text-align: center;
-        border: 1px solid rgb(51, 51, 51);
-        border-radius: 5px;
-        margin-top: 25px;
-        background-color: white;
-        overflow: hidden;
-
-        img {
-            width: 60%;
-            height: auto;
-            border-radius: 2px;
-        }
-
-        .stars {
-            width: 64px;
-            height: 64px;
-            padding: 2%;
-        }
-
-        p {
-            padding: 10px;
-        }
     }
 
-    @media (max-width:800px) {
-        flex-direction: column;
-
-        .top-box {
-            width: 90%;
-            align-self: center;
-        }
+    .about-grid .avatar-card {
+        display: flex;
+        width: 90%;
+        align-self: center;
     }
+}
+
+@media (max-width: 800px) {
+    .hide-book {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+h3 .hide-book {
+    background: none;
 }
